@@ -1,9 +1,10 @@
 /** @type {import('@enhance/types').EnhanceApiFn} */
 export async function get({ session }) {
-  const sessionUpdate = { foo: `${session.foo || 'foo'}-bar`}
+  const sessionUpdate = { foo: `${session.foo || 'foo'}-ENH`}
+  session = { ...session, ...sessionUpdate, arc: false, enhance: true }
 
   return {
-    session: { ...session, ...sessionUpdate },
-    json: sessionUpdate,
+    session,
+    json: session,
   }
 }

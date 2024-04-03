@@ -5,10 +5,12 @@
     "start": "npx enhance dev"
   },
   "devDependencies": {
+    "@architect/architect": "^11.0.7",
     "@enhance/cli": "latest",
     "@enhance/types": "^0.6.1"
   },
   "dependencies": {
+    "@architect/functions": "^8.1.0",
     "@enhance/arc-plugin-enhance": "^9.4.11"
   }
 }
